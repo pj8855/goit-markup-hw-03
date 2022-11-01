@@ -137,6 +137,7 @@ h1, h2, h3, p {
   text-align: center;
   min-width: 216px;
   max-width: max-content;
+  cursor: pointer;
 }
 
 /* -- Секція Особливості -- */

@@ -21,7 +21,7 @@
     <!-- Хеддер -->
 
     <header>
-      <div class="header-div">
+      <div class="container header">
         <a href="./index.html" class="logo" lang="en">
           Web<span id="studio-logo">Studio</span>
         </a>
@@ -32,7 +32,9 @@
               <a href="./index.html" class="menu-link link">Студія</a>
             </li>
             <li class="menu-item">
-              <a href="./portfolio.html" class="menu-link link main">Портфоліо</a>
+              <a href="./portfolio.html" class="menu-link link main"
+                >Портфоліо</a
+              >
             </li>
             <li class="menu-item">
               <a href="./contacts" class="menu-link link">Контакти</a>
@@ -40,16 +42,19 @@
           </ul>
         </nav>
 
-        <a href="mailto:info@devstudio.com" class="mail">info@devstudio.com</a>
-        <a href="tel:+380961111111" class="tel">+38 096 111 11 11</a>
+        <div class="contacts">
+          <a href="mailto:info@devstudio.com" class="mail"
+            >info@devstudio.com</a
+          >
+          <a href="tel:+380961111111" class="tel">+38 096 111 11 11</a>
+        </div>
       </div>
     </header>
 
     <main>
-      <!-- Кнопки фільтрів -->
-
-      <section>
-        <div class="filters">
+      <section class="section projects">
+        <!-- Кнопки фільтрів -->
+        <div class="container">
           <ul class="filters-list list">
             <li><button class="filter-button" type="button">Усі</button></li>
             <li>
@@ -64,12 +69,9 @@
             </li>
           </ul>
         </div>
-      </section>
 
-      <!-- Зразки Проектів -->
-
-      <section>
-        <div class="projects">
+        <!-- Зразки Проектів -->
+        <div class="container">
           <ul class="projects-list list">
             <li class="project-list-item">
               <img
@@ -178,17 +180,25 @@
     <!-- Підвал -->
 
     <footer>
-      <div class="footer-div">
+      <div class="container">
         <a href="./site-logo" class="logo" lang="en"
           >Web<span id="studio-footer">Studio</span></a
         >
+
         <address>м. Київ, пр-т Лесі Українки, 26</address>
-        <a href="mailto:info@devstudio.com" class="footer-mail link"
-          >info@devstudio.com</a
-        >
-        <a href="tel:+380961111111" class="footer-tel link"
-          >+38 096 111 11 11</a
-        >
+
+        <ul class="footer-contacts list">
+          <li class="footer-contacts-item">
+            <a href="mailto:info@devstudio.com" class="footer-mail link"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="footer-contacts-item">
+            <a href="tel:+380961111111" class="footer-tel link"
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
       </div>
     </footer>
   </body>

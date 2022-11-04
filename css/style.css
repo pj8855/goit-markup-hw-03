@@ -10,8 +10,10 @@ img {
 }
 
 header {
-  border: 1px solid #ECECEC;
+  border-bottom: 1px solid #ECECEC;
   background-color: #FFFFFF;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 h1, h2, h3, p, ul {
@@ -57,20 +59,24 @@ h1, h2, h3, p, ul {
 }
 
 .link {
-  text-decoration: none;  
+  text-decoration: none;
 }
 
 /*  -- Навігація по сторінках у хеддері -- */
 .header {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
+}
+
+.menu {
+  margin-left: 93px;
+  margin-right: auto;
 }
 
 .menu-items {
   display: flex;
   gap: 50px;
-  padding: 32px 0;
 }
 
 .menu-link {
@@ -79,6 +85,7 @@ h1, h2, h3, p, ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
+  padding: 32px 0;
 }
 
 /* -- Колір визначення розташування -- */
@@ -90,12 +97,13 @@ h1, h2, h3, p, ul {
 .contacts {
   display: flex;
   gap: 50px;
+  justify-self: flex-end;
 }
 
 .mail {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.71;
   letter-spacing: 0.02em;
   color: var(--brand-color);
   text-decoration: none;
@@ -105,7 +113,7 @@ h1, h2, h3, p, ul {
 .tel {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.71;
   letter-spacing: 0.02em;
   color: #757575;
   text-decoration: none;
@@ -154,6 +162,10 @@ h1, h2, h3, p, ul {
   gap: 30px;
 }
 
+.features-list-item {
+  width: 270px;
+}
+
 .features-title {
   font-size: 14px;
   line-height: 1.14;
@@ -171,13 +183,17 @@ h1, h2, h3, p, ul {
 }
 
 /* -- Секція about -- */
+.about {
+  padding-top: 0;
+}
+
 .about-title {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  padding: 0 0 50px;
+  margin-bottom: 50px;
 }
 
 .about-list {
@@ -196,7 +212,7 @@ h1, h2, h3, p, ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  padding: 0 0 50px;
+  margin-bottom: 50px;
 }
 
 .team-list {
@@ -222,7 +238,8 @@ h1, h2, h3, p, ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin: 30px auto 10px;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 /* -- посада учасника команди -- */
@@ -232,7 +249,7 @@ h1, h2, h3, p, ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: #757575;
-  margin: 0 auto 30px;
+  padding-bottom: 30px;
 }
 
 /* -- Кнопки фільтрів на ст. Портфоліо -- */
@@ -240,7 +257,7 @@ h1, h2, h3, p, ul {
   display: flex;
   justify-content: center;
   gap: 8px;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 
 .filter-button {
@@ -324,13 +341,13 @@ address {
 
 /* -- телефон та мейл у "підвалі" */
 .footer-contacts-item {
-  padding-top: 9px;
+  margin-top: 9px;
 }
 
 .footer-mail,
 .footer-tel {
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }

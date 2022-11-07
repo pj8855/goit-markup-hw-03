@@ -12,11 +12,11 @@ img {
 header {
   border-bottom: 1px solid #ECECEC;
   background-color: #FFFFFF;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
-h1, h2, h3, p, ul {
+h1, h2, h3, p, ul {   
   margin: 0;
   padding: 0;
 }
